@@ -1,3 +1,10 @@
+-- Slet tabeller hvis de eksisterer (til genkørsel)
+DROP TABLE IF EXISTS Driftsomkostning;
+DROP TABLE IF EXISTS Driftsbudget;
+DROP TABLE IF EXISTS Finansiering;
+DROP TABLE IF EXISTS Investeringscase;
+DROP TABLE IF EXISTS Ejendomsprofil;
+
 -- Ejendomsprofil
 CREATE TABLE Ejendomsprofil (
     ejendomsprofil_id   INT           PRIMARY KEY IDENTITY(1,1),

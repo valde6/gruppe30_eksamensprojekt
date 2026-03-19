@@ -40,3 +40,4 @@ WHERE ic.oprettet_dato = (
     FROM Investeringscase ic2
     WHERE ic2.ejendomsprofil_id = ep.ejendomsprofil_id
 );
+

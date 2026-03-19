@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EjendomsInvest</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">EjendomsInvest</div>
+        <span class="nav-info">Gruppe 30 — HA(it) CBS 2026</span>
+    </nav>
+
+    <!-- HERO / SØGESEKTION -->
+    <section class="hero">
+        <h1>Analysér din næste ejendomsinvestering</h1>
+        <p class="hero-desc">
+            Søg en dansk adresse, hent BBR-data automatisk og simuler
+            cashflow og egenkapital over 30 år.
+        </p>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Søg adresse — fx Østerbrogade 45, København..."
+                autocomplete="off">
+            <button id="searchBtn">Søg</button>
+        </div>
+        <div id="autocompleteList" class="autocomplete-list"></div>
+        <p class="search-hint">Valideres automatisk via DAWA API</p>
+    </section>
+
+    <!-- EJENDOMSPROFILER -->
+    <section class="profiles-section">
+        <h2>Seneste ejendomsprofiler</h2>
+
+        <div class="cards" id="profileCards">
+
+            <div class="card">
+                <div class="card-type">Lejlighed</div>
+                <div class="card-addr">Østerbrogade 45, 2100 KBH Ø</div>
+                <div class="card-date">Oprettet 19. marts 2026</div>
+                <div class="card-stats">
+                    <span>87 m²</span>
+                    <span>Byggeår: 1923</span>
+                    <span>3 værelser</span>
+                </div>
+                <div class="card-footer">
+                    <span class="cases-badge">2 cases</span>
+                    <button class="btn-view">Se profil →</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-type">Enfamiliehus</div>
+                <div class="card-addr">Villavej 12, 2800 Kongens Lyngby</div>
+                <div class="card-date">Oprettet 19. marts 2026</div>
+                <div class="card-stats">
+                    <span>142 m²</span>
+                    <span>Byggeår: 1967</span>
+                    <span>5 værelser</span>
+                </div>
+                <div class="card-footer">
+                    <span class="cases-badge">1 case</span>
+                    <button class="btn-view">Se profil →</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-type">Rækkehus</div>
+                <div class="card-addr">Amagerbrogade 33, 2300 KBH S</div>
+                <div class="card-date">Oprettet 19. marts 2026</div>
+                <div class="card-stats">
+                    <span>110 m²</span>
+                    <span>Byggeår: 2005</span>
+                    <span>4 værelser</span>
+                </div>
+                <div class="card-footer">
+                    <span class="cases-badge">1 case</span>
+                    <button class="btn-view">Se profil →</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+/* CSS variabler — gør det nemt at ændre farver ét sted */
+:root {
+    --baggrund: #f5f5f5;
+    --hvid: #ffffff;
+    --mørk: #1a1a2e;
+    --grøn: #2d6a4f;
+    --guld: #c8a96e;
+    --grå: #7a7a8c;
+    --kant: #e0e0e0;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: var(--baggrund);
+    color: var(--mørk);
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 48px;
+    background-color: var(--mørk);
+    color: white;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--guld);
+}
+
+.nav-info {
+    font-size: 13px;
+    color: var(--grå);
+}
+
+/* HERO */
+.hero {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.hero-desc {
+    font-size: 16px;
+    color: var(--grå);
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+/* SØGEFELT */
+.search-box {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px 16px;
+    font-size: 15px;
+    border: 1px solid var(--kant);
+    border-radius: 6px;
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: var(--grøn);
+}
+
+.search-box button {
+    padding: 12px 24px;
+    background-color: var(--mørk);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: var(--grøn);
+}
+
+/* AUTOCOMPLETE DROPDOWN */
+.autocomplete-list {
+    background: var(--hvid);
+    border: 1px solid var(--kant);
+    border-radius: 6px;
+    display: none;
+    text-align: left;
+}
+
+.autocomplete-item {
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--kant);
+}
+
+.autocomplete-item:last-child {
+    border-bottom: none;
+}
+
+.autocomplete-item:hover {
+    background-color: var(--baggrund);
+}
+
+.search-hint {
+    font-size: 12px;
+    color: var(--grå);
+    margin-top: 6px;
+}
+
+/* EJENDOMSPROFILER */
+.profiles-section {
+    max-width: 1100px;
+    margin: 0 auto 60px;
+    padding: 0 48px;
+}
+
+.profiles-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: var(--hvid);
+    border: 1px solid var(--kant);
+    border-radius: 8px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.card:hover {
+    border-color: var(--grøn);
+}
+
+.card-type {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--grøn);
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.card-addr {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.card-date {
+    font-size: 12px;
+    color: var(--grå);
+    margin-bottom: 12px;
+}
+
+.card-stats {
+    display: flex;
+    gap: 12px;
+    font-size: 13px;
+    color: var(--grå);
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cases-badge {
+    background-color: #e8f4f0;
+    color: var(--grøn);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.btn-view {
+    background: none;
+    border: 1px solid var(--kant);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.btn-view:hover {
+    background-color: var(--mørk);
+    color: white;
+    border-color: var(--mørk);
+}
