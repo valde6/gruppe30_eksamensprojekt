@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejendomsprofil — EjendomsInvest</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">EjendomsInvest</div>
+        <span class="nav-info">Gruppe 30 — HA(it) CBS 2026</span>
+    </nav>
+
+    <!-- TILBAGE KNAP -->
+    <div class="tilbage-wrapper">
+        <a href="index.html" class="tilbage-btn">← Tilbage til oversigt</a>
+    </div>
+
+    <!-- EJENDOMSDATA -->
+    <section class="ejendom-section">
+
+        <div class="ejendom-header">
+            <div>
+                <div class="card-type" id="ejendomstype">Lejlighed</div>
+                <h1 id="ejendomAdresse">Østerbrogade 45, 2100 København Ø</h1>
+                <p class="card-date" id="ejendomDato">Oprettet 19. marts 2026</p>
+            </div>
+            <button class="btn-ny-case" id="nyCase">+ Opret ny investeringscase</button>
+        </div>
+
+        <!-- BBR DATA -->
+        <div class="bbr-grid">
+            <div class="bbr-kort">
+                <div class="bbr-label">Boligareal</div>
+                <div class="bbr-val" id="boligareal">87 m²</div>
+            </div>
+            <div class="bbr-kort">
+                <div class="bbr-label">Byggeår</div>
+                <div class="bbr-val" id="byggeaar">1923</div>
+            </div>
+            <div class="bbr-kort">
+                <div class="bbr-label">Antal værelser</div>
+                <div class="bbr-val" id="vaerelser">3</div>
+            </div>
+            <div class="bbr-kort">
+                <div class="bbr-label">Grundareal</div>
+                <div class="bbr-val" id="grundareal">—</div>
+            </div>
+        </div>
+
+        <!-- INVESTERINGSCASES -->
+        <div class="cases-sektion">
+            <h2>Investeringscases</h2>
+
+            <div class="cases-liste" id="casesListe">
+
+                <div class="case-kort">
+                    <div class="case-navn">Østerbro udlejning 2024</div>
+                    <div class="case-beskrivelse">Udlejning til studerende nær universitetet</div>
+                    <div class="case-pris">Ejendomspris: 3.200.000 kr.</div>
+                    <div class="case-footer">
+                        <button class="btn-view">Se simulering →</button>
+                        <button class="btn-slet">Slet</button>
+                    </div>
+                </div>
+
+                <div class="case-kort">
+                    <div class="case-navn">Østerbro korttidsudlejning</div>
+                    <div class="case-beskrivelse">Airbnb-strategi i højsæson</div>
+                    <div class="case-pris">Ejendomspris: 3.200.000 kr.</div>
+                    <div class="case-footer">
+                        <button class="btn-view">Se simulering →</button>
+                        <button class="btn-slet">Slet</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <script src="js/ejendom.js"></script>
+</body>
+
+</html>
