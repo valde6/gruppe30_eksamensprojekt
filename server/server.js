@@ -11,6 +11,7 @@ const app = express();
 
 // Tillad JSON i request body
 app.use(express.json());
+express.static
 
 // ==========================================
 // DATABASE KONFIGURATION
