@@ -11,7 +11,7 @@ const app = express();
 
 // Tillad JSON i request body
 app.use(express.json());
-express.(express.static('public'))
+app.use(express.static('../frontend'))
 
 // ==========================================
 // DATABASE KONFIGURATION
