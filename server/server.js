@@ -5,6 +5,7 @@
 
 const express = require('express');
 const sql = require('mssql');
+const adresseRouter = require('./routes/addresses'); // Importer adresse-routeren
 require('dotenv').config();
 
 
@@ -14,6 +15,8 @@ const app = express();
 // Tillad JSON i request body
 app.use(express.json());
 app.use(express.static('../frontend'))
+
+app.use('/api/adresser', adresseRouter); // Brug adresse-routeren (routes/addresses.js) for alle /api/adresser endpoints
 
 // ==========================================
 // DATABASE KONFIGURATION

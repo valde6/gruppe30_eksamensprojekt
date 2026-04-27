@@ -23,8 +23,8 @@ searchInput.addEventListener("input", function () {
         return;
     }
 
-    // Kald DAWA API med fetch
-    const url = "https://api.dataforsyningen.dk/autocomplete?q=" + encodeURIComponent(query) + "&type=adresse&caretpos=" + query.length;
+    // Kald backend API for at få adresseforslag - Den kaldes på vores egen server, som så kalder DAWA (for at skjule vores login til BBR)
+   const url = "/api/adresser/sog?q=" + encodeURIComponent(query);
 
     fetch(url)
         .then(function (response) {
